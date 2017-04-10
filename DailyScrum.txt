@@ -1,0 +1,22 @@
+
+--- April 10 Yas
+DID SINCE LAST SCRUM:
+1. Today is the First day of Scrum...
+2. .....
+
+WILL DO IN THE NEXT 24 HOURS
+1. Will modify the proposal to be a software design.
+2. Will design the second window of the Inventory System with the 4 options of Sale, purchase, 
+   Inventory and Reports.
+3. Will finish Planned breakup in Trello Finish Z then move on to research and implement B
+4. Will make the Visual Studio of Login window
+5. Will make the Visual Studio of Main Inventory window (Containg 4 buttons)
+
+WHERE I NEED HELP IS...
+1. I need help finding out more about how other inventory examples online are designed. 
+
+
+
+
+
+
