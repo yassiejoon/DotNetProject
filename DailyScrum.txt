@@ -1,7 +1,7 @@
 
---- April 10 Yas
+--- April 11 Yas
 DID SINCE LAST SCRUM:
-1. Today is the First day of Scrum...
+1. Today is the Second day of Scrum...
 2. .....
 
 WILL DO IN THE NEXT 24 HOURS
