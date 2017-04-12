@@ -28,7 +28,7 @@ WHERE I NEED HELP IS...
 
 
 
---- April 11 Wei
+--- April 12 Wei
 DID SINCE LAST SCRUM:
 1. Discussed the project with team and modified the project proposal 
 2. Made major changes in the software design and table structure
