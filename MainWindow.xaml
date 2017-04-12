@@ -4,7 +4,7 @@
       Title="Welcome to Auto Parts Inventory Management System" Height="750" Width="1000">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="700" Margin="10,10,0,0" VerticalAlignment="Top" Width="972">
-            <TabItem Header="Files" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="185" FontSize="28" FontWeight="Bold">
+            <TabItem Header="Files" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="185" FontSize="24" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
                     <Button Content="Import &#xD;&#xA;&#xD;&#xA;  Data" HorizontalAlignment="Left" Margin="100,73,0,0" VerticalAlignment="Top" Width="300" Height="150" FontSize="25" FontWeight="Bold"/>
                     <Button Content="Exit" HorizontalAlignment="Left" Margin="549,314,0,0" VerticalAlignment="Top" Width="300" Height="150" FontSize="25" FontWeight="Bold"/>
@@ -13,7 +13,7 @@
                     <Label HorizontalAlignment="Left" Margin="378,571,0,0" VerticalAlignment="Top" Height="67" Width="574" Content="Auto Parts Y&amp;W Company" FontWeight="Bold" FontFamily="Rosewood Std Regular" FontSize="48"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Login/Register" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="225" FontSize="28" FontWeight="Bold">
+            <TabItem Header="Login/Register" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="225" FontSize="24" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
                     <GroupBox Header="Login" HorizontalAlignment="Left" Height="628" Margin="10,10,0,0" VerticalAlignment="Top" Width="458">
                         <Label Content="No account?&#xD;&#xA;Please Register!" FontSize="24" FontWeight="Normal" HorizontalAlignment="Left" Height="84" Margin="56,324,0,0" VerticalAlignment="Top" Width="358"/>
@@ -38,16 +38,14 @@
                     <GroupBox Header="Register" HorizontalAlignment="Left" Height="628" Margin="473,10,0,0" VerticalAlignment="Top" Width="479"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Sales" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top"  Width="185" FontSize="28" FontWeight="Bold">
-                <Grid Background="#FFE5E5E5">
-                    <GroupBox Header="Compute Price" HorizontalAlignment="Left" Height="384" Margin="596,185,0,0" VerticalAlignment="Top" Width="356"/>
-                    <GroupBox Header="Product Details" HorizontalAlignment="Left" Height="175" Margin="646,10,0,0" VerticalAlignment="Top" Width="306"/>
-                    <GroupBox Header="Customer Info" HorizontalAlignment="Left" Height="170" Margin="0,10,0,0" VerticalAlignment="Top" Width="641"/>
+            <TabItem Header="Sales" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top"  Width="185" FontSize="24" FontWeight="Bold">
+                <Grid Background="#FFE5E5E5" Margin="0,10,0,-10">
+                    <GroupBox Header="Product Details"  FontSize="16"   HorizontalAlignment="Left" Height="255" Margin="548,0,0,0" VerticalAlignment="Top" Width="379"/>
                     <Button Content="Save"  FontSize="24"  HorizontalAlignment="Left" Margin="418,587,0,0" VerticalAlignment="Top" Width="108"/>
                     <Button Content="Print"  FontSize="24"  HorizontalAlignment="Left" Margin="696,587,0,0" VerticalAlignment="Top" Width="96"/>
                     <Button Content="Cancel"  FontSize="24"  HorizontalAlignment="Left" Margin="147,587,0,0" VerticalAlignment="Top" Width="114"/>
-                    <GroupBox Header="Order List" HorizontalAlignment="Left" Height="384" Margin="10,185,0,0" VerticalAlignment="Top" Width="581">
-                        <ListView HorizontalAlignment="Left" Height="338" Margin="10,0,-2,0" VerticalAlignment="Top" Width="561">
+                    <GroupBox Header="Order List" FontSize="16" HorizontalAlignment="Left" Height="294" Margin="10,283,0,0" VerticalAlignment="Top" Width="689">
+                        <ListView Height="234" Margin="10,12,-2,0" VerticalAlignment="Top">
                             <ListView.View>
                                 <GridView>
                                     <GridViewColumn/>
@@ -55,10 +53,35 @@
                             </ListView.View>
                         </ListView>
                     </GroupBox>
+                    <Label Name="lblCustomerId" Content="...     " FontSize="12" HorizontalAlignment="Left" Margin="147,35,0,0" VerticalAlignment="Top" Width="89"/>
+                    <TextBox Name="tbCustomerName" HorizontalAlignment="Left" Height="47" Margin="65,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="435"/>
+                    <TextBox Name="tbAddress" HorizontalAlignment="Left" Height="108" Margin="65,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="435"/>
+                    <GroupBox Header="Customer Details"  FontSize="16"  HorizontalAlignment="Left" Height="255" Margin="10,0,0,0" VerticalAlignment="Top" Width="516">
+                        <Label Content="Label" HorizontalAlignment="Left" Height="94" Margin="-111,17,0,0" VerticalAlignment="Top" Width="192"/>
+                    </GroupBox>
+                    <Label Content="Discount %"  FontSize="18"  HorizontalAlignment="Left" Margin="733,335,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Subtotal" FontSize="18"  HorizontalAlignment="Left" Margin="733,386,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Shipping" FontSize="18"  HorizontalAlignment="Left" Margin="733,436,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Taxes" FontSize="18"  HorizontalAlignment="Left" Margin="734,484,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.19,0.382"/>
+                    <TextBox Name="tbDiscount" HorizontalAlignment="Left" Height="41" Margin="842,329,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+                    <TextBox Name="tbSubtotal" HorizontalAlignment="Left" Height="41" Margin="842,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+                    <TextBox Name="tbShip" HorizontalAlignment="Left" Height="41" Margin="842,429,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+                    <TextBox Name=" tbTax" HorizontalAlignment="Left" Height="41" Margin="842,479,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+                    <Label Content="Total"  FontSize="18" HorizontalAlignment="Left" Margin="736,529,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.055,0.529"/>
+                    <TextBox Name="tbTotal" HorizontalAlignment="Left" Height="41" Margin="842,529,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+                    <Label Content="...     "  Name="lblProductName" FontSize="12"  HorizontalAlignment="Left" Margin="857,39,0,0" VerticalAlignment="Top" Width="62"/>
+                    <Label Content="...    "  Name="lblQuantityPerUnit" FontSize="12" HorizontalAlignment="Left" Margin="857,99,0,0" VerticalAlignment="Top" Width="70"/>
+                    <Label Content="...    "  Name="lblCostPrice" FontSize="12" HorizontalAlignment="Left" Margin="668,195,0,0" VerticalAlignment="Top" Width="74"/>
+                    <Label Content="...    "  x:Name="lblUnitsInStock" FontSize="12" HorizontalAlignment="Left" Margin="668,147,0,0" VerticalAlignment="Top" Width="74"/>
+                    <Label Content="...    "  x:Name="lblUnitsInOrder" FontSize="12" HorizontalAlignment="Left" Margin="857,147,0,0" VerticalAlignment="Top" Width="70"/>
+                    <Label Content="Product Name" Name="tb" FontSize="12"  HorizontalAlignment="Left" Margin="743,39,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Quantity/Unit" FontSize="12" HorizontalAlignment="Left" Margin="745,99,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Units In Order" FontSize="12" HorizontalAlignment="Left" Margin="745,147,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Name="" HorizontalAlignment="Left" Margin="247,26,0,0" VerticalAlignment="Top" Width="253"/>
 
                 </Grid>
             </TabItem>
-            <TabItem Header="Purchase" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top"  Width="185" FontSize="28" FontWeight="Bold">
+            <TabItem Header="Purchase" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top"  Width="185" FontSize="24" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
                     <GroupBox Header="Supplier Info" HorizontalAlignment="Left" Height="174" Margin="10,10,0,0" VerticalAlignment="Top" Width="558"/>
                     <GroupBox Header="Product Details" HorizontalAlignment="Left" Height="174" Margin="573,10,0,0" VerticalAlignment="Top" Width="389"/>
@@ -84,13 +107,14 @@
                     <GroupBox Header="Purchase List" HorizontalAlignment="Left" Height="393" Margin="0,184,0,0" VerticalAlignment="Top" Width="962"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Inventory" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top"  Width="185" FontSize="28" FontWeight="Bold">
+            <TabItem Header="Inventory" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top"  Width="185" FontSize="24" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="95*"/>
-                        <ColumnDefinition Width="867*"/>
+                        <ColumnDefinition Width="362*"/>
+                        <ColumnDefinition Width="505*"/>
                     </Grid.ColumnDefinitions>
-                    <ListView HorizontalAlignment="Left" Height="542" Margin="10,96,0,0" VerticalAlignment="Top" Width="942" Grid.ColumnSpan="2">
+                    <ListView HorizontalAlignment="Left" Height="542" Margin="10,96,0,0" VerticalAlignment="Top" Width="942" Grid.ColumnSpan="3">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn/>
@@ -102,5 +126,12 @@
                 </Grid>
             </TabItem>
         </TabControl>
+        <Label Content="...   " Name="lblProductId" FontSize="12" HorizontalAlignment="Left" Margin="678,96,0,0" VerticalAlignment="Top" Width="72" Height="26"/>
+        <Label Content="...   "  Name="lblSupplierName" FontSize="12"  HorizontalAlignment="Left" Margin="682,156,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Product ID" HorizontalAlignment="Left" Margin="582,96,0,0" VerticalAlignment="Top"/>
+        <Label Content="Supplier Name" HorizontalAlignment="Left" Margin="580,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="Units In Stock" HorizontalAlignment="Left" Margin="582,204,0,0" VerticalAlignment="Top" Width="87"/>
+        <Label Content="Cost Price" HorizontalAlignment="Left" Margin="582,252,0,0" VerticalAlignment="Top"/>
+        <Label Content="Customer ID" HorizontalAlignment="Left" Margin="78,100,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
