@@ -24,7 +24,7 @@ namespace AutoParts
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {
+        {  // Exception error
             InitializeComponent();
         }
         Register register = new Register();
