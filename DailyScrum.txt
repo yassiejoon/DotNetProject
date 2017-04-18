@@ -1,49 +1,44 @@
-		End of class on Thursday
---- April 13 Yas 
+		
+--- April 18 Yas
+ 
 DID SINCE LAST SCRUM: (During class today)
-1. Modified tables' Definition
-2. Designed 5 classes for the project
-3. Researched on Ribbon online
-4. Studied Entity Framework
-5. First try on Entity Framework using Empty Code First Model for Model1 project
-6. commited Daily Scrum twice
-7. Added more cards on Trello
+1. Read material on Forum regarding Entity Framework
+2. Implemented Ribbon on a test proj 
+3. Added/moved cards on Trello  
+4. wrote classes 
 
 
 
-WILL DO IN THE NEXT 24 HOURS (during long weekend)
 
-1. Studying and implementing Ribbon on a test design as a practice to incorporate later
-2. Added to Trello cards and redistributing as we go on
-3. Project coding
-3. Studied Entity Framework more
-4. work on Entity Framework using Empty Code First Model for Model1 project
-5. Reading the material in the Forum
-6. Implementing Ribbon on the project
+WILL DO IN THE NEXT 24 HOURS 
 
-
-WHERE I NEED HELP IS...
-1. More research on Ribbon 
-2. More study on Entity Framework and mastering it
-
+1. First tries to implement Entity Framework to project
+2. Prepare for the Quiz tomorrow
+3. Continue with project coding
  
 
 
 
+WHERE I NEED HELP IS...
+1. Mastering Ribbon 
+2. More study on Entity Framework and implementing it on Project
+3. Preparing for Quiz
 
---- April 12 Wei  (During class today)
+ 
+
+
+--- April 18 Wei  
 
 DID SINCE LAST SCRUM:
-1. Started on more changes in the software design cosidering use of Ribbon
-2. started implementing tables
-3. Studied Entity Framework
-4. First try on Entity Framework using Empty Code First Model for Model1 project
-5. Added more cards on Trello
+1. started implementing tables
+2. Studied Entity Framework
+3. First try on Entity Framework using Empty Code First Model for Model1 project
+4. Added more cards on Trello
+5. coded login and Register window
 
 
 
-
-WILL DO IN THE NEXT 24 HOURS (during long weekend)
+WILL DO IN THE NEXT 24 HOURS 
 1. Continue with purchase window
 2. coding login and Register window
 3. More research on Entity Framework
@@ -55,6 +50,8 @@ WILL DO IN THE NEXT 24 HOURS (during long weekend)
 WHERE I NEED HELP IS...
 1. Looking up on Ribbon feature
 2. Research on Entity Framework
+
+
 
 
 
