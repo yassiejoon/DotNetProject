@@ -1,51 +1,59 @@
-
---- April 12 Yas
-DID SINCE LAST SCRUM:
-1. Discussed the project with team and modified the project proposal 
-2. Made major changes in the software design and table structure
-3. connected to Azure at home
-4. Installed Visual Studio 2017 on class PC
-5. Added a few more steps on Trello
-6. Started on Initial window dewsign
-7. Started on creating databases
-
-
-
-WILL DO IN THE NEXT 24 HOURS
-1. Connected to Database in class.
-2. Complete creating all databases and setting constraint
-3. Commit the scrum and changes team made
+		
+--- April 19 Yas
+ 
+DID SINCE LAST SCRUM: (During class today)
+1. Continued reading material on Forum regarding Entity Framework
+2. Implemented Ribbon on a test proj 
+3. Added/moved cards on Trello  
 
 
 
 
 
-WHERE I NEED HELP IS...
-1. Need to search on WPF Sales window design which will present lots of data
+WILL DO IN THE NEXT 24 HOURS 
+
+1. Implementing Entity Framework to project did not succeed
+2. Implement Custom Dialog box on the Main page of Project
+3. More practice on Entity Framework example
  
 
 
 
+WHERE I NEED HELP IS...
+1. Mastering Entity Framework
+2. Implement Entity Framework using tables 
 
 
---- April 11 Wei
+ 
+
+
+--- April 19 Wei  
+
 DID SINCE LAST SCRUM:
-1. Discussed the project with team and modified the project proposal 
-2. Made major changes in the software design and table structure
-3. Started and continued on the software design tab pages
-4. Installed Visual Studio 2017 on class PC
-5. connected to Azure at home
-6. Connected to database at home
+1. started implementing tables
+2. Studied Entity Framework
+3. First try on Entity Framework using Empty Code First Model for Model1 project
+4. Added more cards on Trello
+5. coded login and Register window
 
 
 
-WILL DO IN THE NEXT 24 HOURS
-1. Modify the File tab pages (Main structure) with team
-2. Continue software design modification
-2. Add a few more planned items in Trello
+WILL DO IN THE NEXT 24 HOURS 
+1. Continue with purchase window
+2. coding login and Register window
+3. More research on Entity Framework
+4. Reading the material in the Forum
+
    
 
 
 WHERE I NEED HELP IS...
-1. I need to find out why I can't push on the source tree
+1. Looking up on Ribbon feature
+2. Research on Entity Framework
+
+
+
+
+
+
 
