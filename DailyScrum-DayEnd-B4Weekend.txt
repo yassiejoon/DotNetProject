@@ -1,0 +1,51 @@
+--- April 21 Yas  (end of class, before weekend)
+ 
+DID SINCE LAST SCRUM: (During class today)
+1. coding behind
+2. coding some  database
+3. Added/moved cards on Trello  
+
+
+
+
+
+
+WILL DO IN THE weekend coming 
+
+1. Finish coding Sales Window
+2. Writing codes behind the ribbon
+3. Starting code behind inventory window
+ 
+
+
+
+WHERE I NEED HELP IS...
+1. Globals class implementation
+
+
+ 
+
+
+--- April 21 Wei  (end of class, before weekend)
+ 
+
+DID SINCE LAST SCRUM:  (During class today) 
+1. coding behind
+2. coding some  database
+3. Added/moved cards on Trello  
+
+
+
+
+WILL DO IN THE weekend coming 
+
+1. Finish coding Purchase window
+2. Testing what Yas finished
+3. More coding Database for purchase window 
+
+
+   
+
+
+WHERE I NEED HELP IS...
+1. Research on List View

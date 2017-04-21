@@ -1,0 +1,48 @@
+
+--- April 11 Yas
+DID SINCE LAST SCRUM:
+1. Discussed the project with team and modified the project proposal 
+2. Made major changes in the software design
+3. REvised table structure
+4. Installed Visual Studio on class PC
+5. Discussed and chose a new design for the main window with Wei
+6. Added and modified some cards on trello
+
+
+
+WILL DO IN THE NEXT 24 HOURS
+1. Connect to Azure at home.
+2. Connect to Database at home.
+3. Create the databases
+
+
+
+
+
+WHERE I NEED HELP IS...
+1. Need to search on Database connection 
+ 
+
+
+
+
+
+--- April 11 Wei
+DID SINCE LAST SCRUM:
+1. Discussed the project with team and modified the project proposal 
+2. Made major changes in the software design
+3. REvised table structure
+4. Installed Visual Studio on class PC
+5. Discussed and chose a new design for the main window with Wei
+
+
+WILL DO IN THE NEXT 24 HOURS
+1. Connect to Azure at home.
+2. design/modify the File tab page of the Inventory System with Registering the new users.
+
+   
+
+
+WHERE I NEED HELP IS...
+1. I need help finding out more about how other inventory examples online are designed. 
+

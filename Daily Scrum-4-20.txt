@@ -1,0 +1,44 @@
+April 20 Yas
+
+ DID SINCE LAST SCRUM:
+1. Implemented Entity Framework 
+2. Modified Ribbon on project
+3. Added/moved cards on Trello  
+4. wrote more classes 
+5. Looked into Globals class
+6. Designed the Sales Window and started on coding
+  
+  
+  
+ WILL DO IN THE NEXT 24 HOURS 
+  
+ 1. continue coding Sales Window
+ 2. continue on Ribbon codes
+ 3. modifying tables
+ 
+  
+ WHERE I NEED HELP IS...
+ 1. Understanding Globals class
+ 2. Entity Framework (cause of errors)
+ 
+ 
+ 
+ April 20 Wei
+ 
+ DID SINCE LAST SCRUM:
+ 1. Entity Framework Practice
+ 2. Continued coding the purchase window
+ 
+  
+ WILL DO IN THE NEXT 24 HOURS  
+1. Coding Purchase window
+2. Table manipulation
+ 
+ 
+  
+ WHERE I NEED HELP IS...
+1. Code behind
+   
+  
+ 
+ 

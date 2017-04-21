@@ -1,0 +1,59 @@
+		
+--- April 19 Yas
+ 
+DID SINCE LAST SCRUM: (During class today)
+1. Continued reading material on Forum regarding Entity Framework
+2. Implemented Ribbon on a test proj 
+3. Added/moved cards on Trello  
+
+
+
+
+
+WILL DO IN THE NEXT 24 HOURS 
+
+1. Implementing Entity Framework to project did not succeed
+2. Implement Custom Dialog box on the Main page of Project
+3. More practice on Entity Framework example
+ 
+
+
+
+WHERE I NEED HELP IS...
+1. Mastering Entity Framework
+2. Implement Entity Framework using tables 
+
+
+ 
+
+
+--- April 19 Wei  
+
+DID SINCE LAST SCRUM:
+1. started implementing tables
+2. Studied Entity Framework
+3. First try on Entity Framework using Empty Code First Model for Model1 project
+4. Added more cards on Trello
+5. coded login and Register window
+
+
+
+WILL DO IN THE NEXT 24 HOURS 
+1. Continue with purchase window
+2. coding login and Register window
+3. More research on Entity Framework
+4. Reading the material in the Forum
+
+   
+
+
+WHERE I NEED HELP IS...
+1. Looking up on Ribbon feature
+2. Research on Entity Framework
+
+
+
+
+
+
+
