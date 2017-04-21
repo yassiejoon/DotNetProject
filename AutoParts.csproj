@@ -43,8 +43,11 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+<<<<<<< HEAD
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+=======
+>>>>>>> 3bb02f1166fa3c0f47b4c012e4236bdef38a0534
     <Reference Include="System.Windows.Controls.Ribbon" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,6 +66,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+<<<<<<< HEAD
     <Compile Include="Admin.xaml.cs">
       <DependentUpon>Admin.xaml</DependentUpon>
     </Compile>
@@ -116,6 +120,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+=======
+    <Compile Include="CustSuppliers.cs" />
+    <Compile Include="Employees.cs" />
+    <Compile Include="Orders.cs" />
+    <Compile Include="Products.cs" />
+    <Compile Include="Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
+>>>>>>> 3bb02f1166fa3c0f47b4c012e4236bdef38a0534
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -135,18 +148,24 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Page Include="Purchase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+=======
+>>>>>>> 3bb02f1166fa3c0f47b4c012e4236bdef38a0534
     <Page Include="Register.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< HEAD
     <Page Include="Sales.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+=======
+>>>>>>> 3bb02f1166fa3c0f47b4c012e4236bdef38a0534
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -166,6 +185,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EntityDeploy Include="Model33.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model33.Designer.cs</LastGenOutput>
@@ -173,6 +193,8 @@
     <None Include="Model33.edmx.diagram">
       <DependentUpon>Model33.edmx</DependentUpon>
     </None>
+=======
+>>>>>>> 3bb02f1166fa3c0f47b4c012e4236bdef38a0534
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

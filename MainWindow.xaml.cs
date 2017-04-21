@@ -24,9 +24,10 @@ namespace AutoParts
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {
+        {  // Exception error
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         Register register = new Register();
         MainPage homepage = new MainPage(); 
@@ -73,6 +74,62 @@ namespace AutoParts
                       }
                       con.Close();
                   }
+=======
+        Register register = new Register();
+        MainPage homepage = new MainPage();
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            register.Show();
+            this.Close();
+        }
+        private void hl1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+            private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            if (tbUserName.Text.Length == 0)
+            {
+                lblMessage.Content = "Enter an UserName.";
+                tbUserName.Focus();
+            }
+            else if (!Regex.IsMatch(tbUserName.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+            {
+                lblMessage.Content = "Enter a valid UserName.";
+                tbUserName.Select(0, tbUserName.Text.Length);
+                tbUserName.Focus();
+            }
+            else
+            {
+                string username = tbUserName.Text;
+                string password = pbPwd.Password;
+                SqlConnection con = new SqlConnection("Data Source=TESTPURU;Initial Catalog=Data;User ID=sa;Password=wintellect");
+                con.Open();
+                SqlCommand cmd = new SqlCommand("Select * from Employees where UserName='" + username + "'  and Password='" + password + "'", con);
+                cmd.CommandType = CommandType.Text;
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = cmd;
+                DataSet dataSet = new DataSet();
+                adapter.Fill(dataSet);
+                if (dataSet.Tables[0].Rows.Count > 0)
+                {
+                    homepage.Show();
+                    Close();
+                }
+                else
+                {
+                    lblMessage.Content = "Sorry! Please enter existing username/password.";
+                }
+                con.Close();
+            }
+            
+        }
+
+        private void Ribbon_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+>>>>>>> 3bb02f1166fa3c0f47b4c012e4236bdef38a0534
         }
     }
 }
