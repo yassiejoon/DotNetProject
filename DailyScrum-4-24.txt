@@ -1,0 +1,49 @@
+--- April 24 Yas  
+DID SINCE LAST SCRUM:
+1. Added Non-Admin user main page
+2. coding behind for ribbon options
+3. Added/moved cards on Trello  
+4. Research on all functions
+
+
+
+
+WILL DO IN THE next 24 hours
+
+1. Finish coding ribbon
+2. coding the Non-admin purchase window
+
+
+
+
+WHERE I NEED HELP IS...
+1. Research on Reports 
+
+
+ 
+
+
+--- April 24 Wei 
+ 
+
+DID SINCE LAST  SCRUM:
+1. started coding behind for admin inventory window
+2. coding some  database
+3. Added/moved cards on Trello 
+4. finished admin Purchase window 
+
+
+
+
+WILL DO IN THE weekend coming 
+
+1. Finish coding inventory window
+2. Testing what Yas finished
+3. More coding Database for purchase window 
+
+
+   
+
+
+WHERE I NEED HELP IS...
+1. Research on Globals
