@@ -1,0 +1,45 @@
+April 18 Yas
+
+DID SINCE LAST SCRUM: 
+
+1. Read material on Forum regarding Entity Framework
+2. Implemented Ribbon on a test proj 
+3. Added/moved cards on Trello  
+4. wrote classes 
+  
+  
+  
+WILL DO IN THE NEXT 24 HOURS (during long weekend)
+  
+1. First tries to implement Entity Framework to project
+2. Prepare for the Quiz tomorrow
+3. Continue with project coding
+ 
+  
+WHERE I NEED HELP IS...
+1. More research on Ribbon 
+2. More study on Entity Framework and mastering it
+  
+ 
+  
+
+April 18 Wei  
+  
+DID SINCE LAST SCRUM:
+1. started implementing tables
+2. Studied Entity Framework
+3. First try on Entity Framework using Empty Code First Model for Model1 project
+4. Added more cards on Trello
+5. coded login and Register window
+  
+  
+
+WILL DO IN THE NEXT 24 HOURS 
+1. Continue with purchase window
+2. coding login and Register window
+3. More research on Entity Framework
+  
+ 
+ 
+WHERE I NEED HELP IS...
+1. Debuging the Entity Framework test

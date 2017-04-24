@@ -1,0 +1,54 @@
+ April 13 Yas
+  
+  DID SINCE LAST SCRUM: (During class today)
+ 1. Modified tables' Definition
+ 2. Designed 5 classes for the project
+ 3. Researched on Ribbon online
+ 4. Studied Entity Framework
+ 5. First try on Entity Framework using Empty Code First Model for Model1 project
+ 6. commited Daily Scrum twice
+ 7. Added more cards on Trello
+
+
+   
+ WILL DO IN THE NEXT 24 HOURS (during long weekend)
+  
+ 1. Studying and implementing Ribbon on a test design as a practice to incorporate later
+ 2. Added to Trello cards and redistributing as we go on
+ 3. Project coding
+ 4. Studied Entity Framework more
+ 5. work on Entity Framework using Empty Code First Model for Model1 project
+ 6. Reading the material in the Forum
+ 7. Implementing Ribbon on the project
+
+ 
+  
+ WHERE I NEED HELP IS...
+ 1. More research on Ribbon 
+ 2. More study on Entity Framework and mastering it
+  
+
+ 
+  
+  
+ 
+April 13 Wei  
+  
+DID SINCE LAST SCRUM:
+1. Started on more changes in the software design cosidering use of Ribbon
+2. started implementing tables
+3. Studied Entity Framework
+4. First try on Entity Framework using Empty Code First Model for Model1 project
+5. Added more cards on Trello
+
+ 
+  
+WILL DO IN THE NEXT 24 HOURS (during long weekend)
+
+1. Continue with purchase window
+2. coding login and Register window
+3. More research on Entity Framework
+
+
+WHERE I NEED HELP IS...
+ 1. More study on Entity Framework and mastering it

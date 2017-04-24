@@ -1,0 +1,53 @@
+﻿<Window x:Class="AutoParts.Sales"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoParts"
+        mc:Ignorable="d"
+        Title="Sales"  Height="750" Width="1000" ResizeMode="NoResize">
+    <Grid Background="#FFB9D1EA">
+        <GroupBox Header="Supplier Info" FontSize="16" HorizontalAlignment="Left" Height="174" Margin="10,10,0,0" VerticalAlignment="Top" Width="558">
+
+
+            <Grid Background="#FFB9D1EA" Height="701" VerticalAlignment="Bottom" Margin="0,-23,-423,-532">
+                <GroupBox Header="Compute Price" FontSize="16" HorizontalAlignment="Left" Height="384" Margin="604,185,0,0" VerticalAlignment="Top" Width="332"/>
+                <GroupBox Header="Customer Info" FontSize="16" HorizontalAlignment="Left" Height="170" Margin="10,10,0,0" VerticalAlignment="Top" Width="926" RenderTransformOrigin="7.225,0.512"/>
+                <Button Content="Save"  FontSize="24"  HorizontalAlignment="Left" Margin="418,587,0,0" VerticalAlignment="Top" Width="108"/>
+                <Button Content="Print"  FontSize="24"  HorizontalAlignment="Left" Margin="696,587,0,0" VerticalAlignment="Top" Width="96"/>
+                <Button Content="Cancel"  FontSize="24"  HorizontalAlignment="Left" Margin="147,587,0,0" VerticalAlignment="Top" Width="114"/>
+                <GroupBox Header="Order List" FontSize="16" HorizontalAlignment="Left" Height="384" Margin="10,185,0,0" VerticalAlignment="Top" Width="581">
+                    <ListView HorizontalAlignment="Left" Height="338" Margin="10,0,-2,0" VerticalAlignment="Top" Width="561" SelectionChanged="ListView_SelectionChanged">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </GroupBox>
+                <Label Content="Invoice Number" FontSize="14" HorizontalAlignment="Left" Margin="36,37,0,0" VerticalAlignment="Top"/>
+                <Label Content="..." FontSize="14" HorizontalAlignment="Left" Margin="202,35,0,0" VerticalAlignment="Top" Width="80"/>
+                <Label FontSize="14"  HorizontalAlignment="Left" Margin="33,89,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.366,1.26" Width="69">
+                    <TextBlock TextWrapping="Wrap" Height="40" Width="59">Billing Address</TextBlock>
+                </Label>
+                <TextBox HorizontalAlignment="Left" Height="85" Margin="109,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298"/>
+                <Label Content="Date Sold:"  FontSize="14" HorizontalAlignment="Left" Margin="653,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.875,-0.338"/>
+                <TextBox HorizontalAlignment="Left" Height="36" Margin="780,39,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.179,-2.457"/>
+                <Label FontSize="14"  HorizontalAlignment="Left" Margin="513,89,0,0" VerticalAlignment="Top">
+                    <TextBlock TextWrapping="Wrap" Height="40" Width="71">Shipping Address</TextBlock>
+                </Label>
+                <TextBox HorizontalAlignment="Left" Height="85" Margin="603,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" RenderTransformOrigin="0.717,0.445"/>
+                <Label Content="Discount %" FontSize="14" HorizontalAlignment="Left" Margin="612,250,0,0" VerticalAlignment="Top"/>
+                <Label Content="Subtotal:"  FontSize="14" HorizontalAlignment="Left" Margin="613,293,0,0" VerticalAlignment="Top"/>
+                <Label Content="Shipping Fee:"  FontSize="14" HorizontalAlignment="Left" Margin="612,337,0,0" VerticalAlignment="Top"/>
+                <Label Content="Sales Tax:"  FontSize="14" HorizontalAlignment="Left" Margin="615,377,0,0" VerticalAlignment="Top"/>
+                <Label Content="Total: " HorizontalAlignment="Left" Margin="615,435,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" FontSize="14"  Height="36" Margin="764,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136"/>
+                <TextBox HorizontalAlignment="Left" FontSize="14"  Height="36" Margin="764,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136"/>
+                <TextBox HorizontalAlignment="Left" FontSize="14"  Height="36" Margin="764,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136"/>
+                <TextBox HorizontalAlignment="Left" FontSize="14"  Height="36" Margin="764,381,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136"/>
+                <TextBox HorizontalAlignment="Left" Height="36" Margin="764,435,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
