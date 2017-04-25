@@ -43,9 +43,11 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -63,37 +65,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Admin.xaml.cs">
-      <DependentUpon>Admin.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Entities\CustSuppliers.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Entities\Employees.cs" />
     <Compile Include="Entities\Orders.cs" />
     <Compile Include="Entities\Products.cs" />
-    <Compile Include="MainUserPage.xaml.cs">
-      <DependentUpon>MainUserPage.xaml</DependentUpon>
+    <Compile Include="ModifyProduct.xaml.cs">
+      <DependentUpon>ModifyProduct.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ModifyProduct.cs" />
-    <Compile Include="Parts.cs" />
-    <Compile Include="Purchase.xaml.cs">
-      <DependentUpon>Purchase.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Purchase.cs" />
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Sales.xaml.cs">
-      <DependentUpon>Sales.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Admin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainUserPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,15 +96,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Purchase.xaml">
+    <Page Include="ModifyProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Register.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Sales.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,9 +134,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="images\add.png" />
     <Resource Include="images\documents.jpg" />
     <Resource Include="images\documents.png" />
+    <Resource Include="images\exit.png" />
     <Resource Include="images\filesave.jpg" />
     <Resource Include="images\fonts.jpg" />
     <Resource Include="images\icon_sleep.png" />
@@ -165,12 +149,6 @@
     <Resource Include="images\play.png" />
     <Resource Include="images\recycle_bin.jpg" />
     <Resource Include="images\system_preferences.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\exit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

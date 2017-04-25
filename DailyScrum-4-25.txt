@@ -1,0 +1,48 @@
+--- April 25 Yas  
+DID SINCE LAST SCRUM:
+1. Added make an order tab page
+2. merged both of our modification
+3. Added/moved cards on Trello  
+4. added date picker
+
+
+
+
+WILL DO IN THE next 24 hours
+
+1. Finish sales tab page
+2. test purchase and inventory pages
+
+
+
+
+WHERE I NEED HELP IS...
+1. Research on reports
+
+
+ 
+
+
+--- April 25 Wei 
+ 
+
+DID SINCE LAST  SCRUM:
+1. coding behind for admin access level
+2. coding some  database
+3. Added/moved cards on Trello 
+4. coding inventory tab page
+
+
+
+
+WILL DO IN THE next 24 hours
+
+1. Finish coding admin access leve 
+2. Testing what Yas finished
+3. coding the main tab page 
+
+   
+
+
+WHERE I NEED HELP IS...
+1. Research on dialog

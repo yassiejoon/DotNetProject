@@ -14,6 +14,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Globalization;
+using System.Windows.Interop;
+using Microsoft.Win32;
+using System.Windows.Forms;
+
 
 namespace AutoParts
 {
@@ -33,12 +38,14 @@ namespace AutoParts
             {
                 db = new Database();
                 InitializeComponent();
+
                 RefreshProductList();
+        
             }
             catch (SqlException e)
             {
                 Console.WriteLine(e.StackTrace);
-                MessageBox.Show("Error opening database connection: " + e.Message);
+                System.Windows.MessageBox.Show("Error opening database connection: " + e.Message);
                 Environment.Exit(1);
             }
         }
@@ -55,9 +62,11 @@ namespace AutoParts
         //For Purchase Window
         private void RefreshProductList()
         {
-    //        lvProductList.ItemsSource = db.GetAllProducts();
-    //        lvInventoryList.ItemsSource = db.GetAllProducts();
+            lvProductList.ItemsSource = db.GetAllProducts();
+            lvInventoryList.ItemsSource = db.GetAllProducts();
         }
+
+        
 
         private void btnRemove_Click(object sender, RoutedEventArgs e)
         {
@@ -68,15 +77,15 @@ namespace AutoParts
                 return;
             }
 
-            int productId = int.Parse(tbRemoveID.Text);
-            string productName = tbRemoveName.Text;
+            int productId = int.Parse(tbkRemoveID.Text);
+            string productName = tbkRemoveName.Text;
             int custSupplierId = pc.CustSupplierId;
             decimal costPrice = pc.CostPrice;
-            string quantityStr = tbRemove.Text;
+            string quantityStr = tbRemoveQty.Text;
             int quantity;
             if (!int.TryParse(quantityStr, out quantity))
             {
-                MessageBox.Show("Quantity must be an integer");
+                System.Windows.Forms.MessageBox.Show("Quantity must be an integer");
                 return;
             }
             try
@@ -88,14 +97,14 @@ namespace AutoParts
             }
             catch (ArgumentException ex)
             {
-                MessageBox.Show(ex.Message);
+                System.Windows.Forms.MessageBox.Show(ex.Message);
             }
 
             lvPurchaseList.ItemsSource = purchaseList;
             lvPurchaseList.SelectedIndex = -1;
-            tbRemoveID.Text = "";
-            tbRemoveName.Text = "";
-            tbRemove.Text = "";
+            tbkRemoveID.Text = "";
+            tbkRemoveName.Text = "";
+            tbRemoveQty.Text = "";
 
         }
 
@@ -107,15 +116,15 @@ namespace AutoParts
                 return;
             }
 
-            int productId = int.Parse(tbAddID.Text);
-            string productName = tbAddName.Text;
+            int productId = int.Parse(tbkAddID.Text);
+            string productName = tbkAddName.Text;
             int custSupplierId = p.CustSupplierId;
             decimal costPrice = p.CostPrice;
-            string quantityStr = tbAdd.Text;
+            string quantityStr = tbAddQty.Text;
             int quantity;
             if (!int.TryParse(quantityStr, out quantity))
             {
-                MessageBox.Show("Quantity must be an integer");
+                System.Windows.MessageBox.Show("Quantity must be an integer");
                 return;
             }
             try
@@ -138,14 +147,14 @@ namespace AutoParts
             }
             catch (ArgumentException ex)
             {
-                MessageBox.Show(ex.Message);
+                System.Windows.Forms.MessageBox.Show(ex.Message);
             }
 
             lvPurchaseList.ItemsSource = purchaseList;
             lvProductList.SelectedIndex = -1;
-            tbAddID.Text = "";
-            tbAddName.Text = "";
-            tbAdd.Text = "";
+            tbkAddID.Text = "";
+            tbkAddName.Text = "";
+            tbAddQty.Text = "";
 
             /*
             int ProductId = int.Parse(tbkAddID.Text);
@@ -171,29 +180,29 @@ namespace AutoParts
 
             CustSuppliers cs = db.FindSupplierById(p.CustSupplierId);
 
-            tbProductID.Text = p.ProductId + "";
-            tbProductName.Text = p.ProductName + "";
-            tbSupplierName.Text = p.CustSupplierId + "";
-            tbQtyPreUnit.Text = p.QuantityPerUnit + "";
-            tbUnitsOnOrder.Text = p.UnitsOnOrder + "";
-            tbUnitsOnStock.Text = p.UnitsOnStock + "";
+            tbkProductID.Text = p.ProductId + "";
+            tbkProductName.Text = p.ProductName + "";
+            tbkSupplierName.Text = p.CustSupplierId + "";
+            tbkQtyPreUnit.Text = p.QuantityPerUnit + "";
+            tbkUnitsOnOrder.Text = p.UnitsOnOrder + "";
+            tbkUnitsOnStock.Text = p.UnitsOnStock + "";
 
-            tbSupplierID.Text = cs.CustSupplierId + "";
-            tbCompanyName.Text = cs.CompanyName + "";
-            tbContactName.Text = cs.ContactName + "";
-            tbPhone.Text = cs.Phone + "";
-            tbAddress.Text = cs.Address + "";
+            tbkSupplierID.Text = cs.CustSupplierId + "";
+            tbkCompanyName.Text = cs.CompanyName + "";
+            tbkContactName.Text = cs.ContactName + "";
+            tbkPhone.Text = cs.Phone + "";
+            tbkAddress.Text = cs.Address + "";
 
-            tbAddID.Text = p.ProductId + "";
-            tbAddName.Text = p.ProductName + "";
-            tbAdd.Text = 1 + "";
+            tbkAddID.Text = p.ProductId + "";
+            tbkAddName.Text = p.ProductName + "";
+            tbAddQty.Text = 1 + "";
             //tbAddQty.Focusable = true;
             //Keyboard.Focus(tbAddQty);
 
             lvPurchaseList.SelectedIndex = -1;
-            tbRemoveID.Text = "";
-            tbRemoveName.Text = "";
-            tbRemove.Text = "";
+            tbkRemoveID.Text = "";
+            tbkRemoveName.Text = "";
+            tbRemoveQty.Text = "";
         }
 
         private void lvPurchaseList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -208,27 +217,27 @@ namespace AutoParts
             Products pd = db.FindProductById(p.ProductId);
             CustSuppliers cs = db.FindSupplierById(p.CustSupplierId);
 
-            tbProductID.Text = pd.ProductId + "";
-            tbProductName.Text = pd.ProductName + "";
-            tbSupplierName.Text = pd.CustSupplierId + "";
-            tbQtyPreUnit.Text = pd.QuantityPerUnit + "";
-            tbUnitsOnOrder.Text = pd.UnitsOnOrder + "";
-            tbUnitsOnStock.Text = pd.UnitsOnStock + "";
+            tbkProductID.Text = pd.ProductId + "";
+            tbkProductName.Text = pd.ProductName + "";
+            tbkSupplierName.Text = pd.CustSupplierId + "";
+            tbkQtyPreUnit.Text = pd.QuantityPerUnit + "";
+            tbkUnitsOnOrder.Text = pd.UnitsOnOrder + "";
+            tbkUnitsOnStock.Text = pd.UnitsOnStock + "";
 
-            tbSupplierID.Text = cs.CustSupplierId + "";
-            tbCompanyName.Text = cs.CompanyName + "";
-            tbContactName.Text = cs.ContactName + "";
-            tbPhone.Text = cs.Phone + "";
-            tbAddress.Text = cs.Address + "";
+            tbkSupplierID.Text = cs.CustSupplierId + "";
+            tbkCompanyName.Text = cs.CompanyName + "";
+            tbkContactName.Text = cs.ContactName + "";
+            tbkPhone.Text = cs.Phone + "";
+            tbkAddress.Text = cs.Address + "";
 
-            tbRemoveID.Text = pd.ProductId + "";
-            tbRemoveName.Text = pd.ProductName + "";
-            tbRemove.Text = 1 + "";
+            tbkRemoveID.Text = pd.ProductId + "";
+            tbkRemoveName.Text = pd.ProductName + "";
+            tbRemoveQty.Text = 1 + "";
 
             lvProductList.SelectedIndex = -1;
-            tbAddID.Text = "";
-            tbAddName.Text = "";
-            tbAdd.Text = "";
+            tbkAddID.Text = "";
+            tbkAddName.Text = "";
+            tbAddQty.Text = "";
         }
 
         private void btnPurchaseSave_Click(object sender, RoutedEventArgs e)
@@ -250,9 +259,12 @@ namespace AutoParts
 
         private bool handle = true;
 
+        public object ModalDialog { get; private set; }
+        public object ModalDialogParent { get; private set; }
+
         private void comboSortBy_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ComboBox cmb = sender as ComboBox;
+            System.Windows.Controls.ComboBox cmb = sender as System.Windows.Controls.ComboBox;
             handle = !cmb.IsDropDownOpen;
             Handle();
         }
@@ -298,6 +310,25 @@ namespace AutoParts
             }
         }
 
+        private void btnRibbonAdd_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
+        private void btnRibbonSave_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnRibbonOpen_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnRibbonDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnRibbonExit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

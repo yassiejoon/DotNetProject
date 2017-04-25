@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace AutoParts
 {
@@ -16,7 +15,9 @@ namespace AutoParts
         public string Password;
         public Boolean IsAdmin;
 
-        public Employees( int employeeId, string firstName, string lastName, string userName, string password, Boolean isAdmin)
+
+        public Employees(int employeeId, string firstName,
+            string lastName, string userName, string password, Boolean isAdmin)
         {
             this.EmployeeId = employeeId;
             this.FirstName = firstName;

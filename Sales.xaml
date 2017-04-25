@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:AutoParts"
         mc:Ignorable="d"
         Title="Sales"  Height="750" Width="1000" ResizeMode="NoResize">
+<<<<<<< HEAD
     <Grid Background="#FFB9D1EA">
         <GroupBox Header="Supplier Info" FontSize="16" HorizontalAlignment="Left" Height="174" Margin="10,10,0,0" VerticalAlignment="Top" Width="558">
 
@@ -49,5 +50,9 @@
                 <TextBox HorizontalAlignment="Left" Height="36" Margin="764,435,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136"/>
             </Grid>
         </GroupBox>
+=======
+    <Grid>
+        
+>>>>>>> a6e9f299b6d27cf8c1c03ab26e67b3ccfab000e4
     </Grid>
 </Window>

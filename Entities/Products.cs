@@ -8,21 +8,21 @@ namespace AutoParts
 {
     class Products
     {
-        public int ProductId;
-        public string ProdName;
-        public int SupplierId;
-        public int QuantityPerUnit;
-        public decimal CostPrice;
-        public int UnitsOnStock;
-        public int UnitsOnOrder;
-        Boolean Discontinued;
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public int CustSupplierId { get; set; }
+        public int QuantityPerUnit { get; set; }
+        public decimal CostPrice { get; set; }
+        public int UnitsOnStock { get; set; }
+        public int UnitsOnOrder { get; set; }
+        Boolean Discontinued { get; set; }
 
-        public Products(int productId, string prodName, int supplierId, int quantityPerUnit, 
+        public Products(int productId, string productName, int custSupplierId, int quantityPerUnit,
             decimal costPrice, int unitsOnStock, int unitsOnOrder, Boolean discontinued)
         {
             this.ProductId = productId;
-            this.ProdName = prodName;
-            this.SupplierId = supplierId;
+            this.ProductName = productName;
+            this.CustSupplierId = custSupplierId;
             this.QuantityPerUnit = quantityPerUnit;
             this.CostPrice = costPrice;
             this.UnitsOnStock = unitsOnStock;

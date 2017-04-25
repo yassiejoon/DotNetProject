@@ -9,22 +9,23 @@ namespace AutoParts
     class Orders
     {
         public int OrderId;
-        public int ProductId;
-        public int CustomerID;
+        public int ProductId { get; set; }
+        public int CustSupplierID;
         public int EmployeeID;
-        public decimal UnitPrice;
-        public int Quantity;
+        public decimal UnitPrice { get; set; }
+        public int Quantity { get; set; }
         public decimal Discount;
         public DateTime OrderDate;
         public DateTime ShippedDate;
         public string ShippedAddress;
 
-        public Orders(int orderId, int productId, int customerID, int employeeID, decimal unitPrice,
+
+        public Orders(int orderId, int productId, int custSupplierID, int employeeID, decimal unitPrice,
             int quantity, decimal discount, DateTime orderDate, DateTime shippedDate, string shippedAddress)
         {
             this.OrderId = orderId;
             this.ProductId = productId;
-            this.CustomerID = customerID;
+            this.CustSupplierID = custSupplierID;
             this.EmployeeID = employeeID;
             this.UnitPrice = unitPrice;
             this.Quantity = quantity;
