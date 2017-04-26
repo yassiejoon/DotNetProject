@@ -1,0 +1,45 @@
+--- April 26 Yas  
+DID SINCE LAST SCRUM:
+1. coding sales tab page and finalizing the design
+2. research on calculating total price
+3. started working on power point
+
+
+
+
+WILL DO IN THE next 24 hours
+
+1. finish coding sales tab page including calculation
+2. power point presentation
+
+
+
+
+WHERE I NEED HELP IS...
+1. Research on powerpoint
+
+
+ 
+
+
+--- April 26 Wei 
+ 
+
+DID SINCE LAST  SCRUM:
+1. modified product option in admin tab page
+2. finished purchase tab page
+
+
+
+
+WILL DO IN THE weekend coming 
+
+1. code modify customer and supplier options
+
+
+
+   
+
+
+WHERE I NEED HELP IS...
+1. Research on coding
